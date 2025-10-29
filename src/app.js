@@ -21,8 +21,7 @@ app.use(
 
 import healthCheckRouter from "./routes/healthcheck.routes.js";
 
-app.use("/api/v1/healthcheck",healthCheckRouter);
-
+app.use("/api/v1/healthcheck", healthCheckRouter);
 
 app.get("/", (req, res) => {
   res.send(`
